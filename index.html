@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulo de progresso</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reponsivo.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Circulo de Progresso</h1>
+        <div class="inputs">
+            <input type="number" placeholder="Digite um número" class="input" onfocus="this.value=''">
+            <button class="btn-enviar">Enviar</button>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-circle">
+            <svg>
+                <circle r="70" cx="70" cy="70"></circle>
+                <circle r="70" cx="70" cy="70" class="circleProgress"></circle>
+            </svg>
+        </div>
+        <div class="number">
+            
+        </div>
+    </div>
+
+    <div class="poup">
+        <button class="btn-poup" onclick="window.location.reload()">X</button>
+        <div class="modal">
+            <div class="paragrafo">
+                <p>Escolha uma porcentagem menor do que 100%.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@media screen and (max-width:500px) {
+    h1 {
+        font-size: 27px;
+    }
+
+    .input {
+        width: 200px;
+    }
+
+    .btn-poup {
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .modal {
+        width: 300px;
+        height: 250px;
+    }
+
+    .paragrafo {
+        font-size: 19px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .btn-poup {
+        top: 26%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
