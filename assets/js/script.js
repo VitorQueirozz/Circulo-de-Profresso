@@ -1,10 +1,10 @@
 let btn = document.querySelector('.btn-enviar')
 let btnPoup = document.querySelector('.btn-poup')
 let poup = document.querySelector('.poup')
-let bodyy = document.querySelector('body')
+let fade = document.querySelector('.fade')
 
 function btnPop() {
-    bodyy.classList.toggle('active')
+    fade.classList.toggle('ativo')
     poup.classList.toggle('ativo')
     btn.disabled = true;
 }

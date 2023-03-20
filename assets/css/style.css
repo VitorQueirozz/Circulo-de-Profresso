@@ -12,8 +12,17 @@ body {
     height: 100vh;
 }
 
-body.active {
+.fade {
+    display: none;
+    z-index: 5;
     background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.fade.ativo {
+    display: block;
 }
 
 .header {
@@ -69,18 +78,21 @@ input::placeholder {
 }
 
 .modal {
-    display: none;
+    opacity: 0%;
+    /*display: none;*/
     color: white;
     position: absolute;
     width: 500px;
     height: 250px;
-    top: 50%;
+    top: -20%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(25, 25, 54, 0.904);
     border-radius: 5px;
     padding: 15px; 
     text-align: center;
+    transition: 0.5s;
+    z-index: 10;
 }
 
 .paragrafo {
@@ -93,26 +105,33 @@ input::placeholder {
 }
 
 .poup.ativo .modal {
-    display: block;
+    top: 50%;
+    opacity: 1;
+    /*display: block;*/
 }
 
 .btn-poup {
-    display: none;
+    opacity: 0;
+    /*display: none;*/
     width: 30px;
     height: 30px;
     background-color: white;
     position: absolute;
-    top: 33%;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: none;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.233);
     cursor: pointer;
     border-radius: 3px;
+    transition: 0.5s;
+    z-index: 10;
 }
 
 .poup.ativo .btn-poup {
-    display: block;
+    top: 33%;
+    opacity: 1;
+    /*display: block;*/
 }
 
 .box-circle svg{
